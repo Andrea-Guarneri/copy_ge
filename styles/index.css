@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --main-color: #06aa48;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+}
+
+/* Navbar */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  padding: 1.5rem 4rem;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+}
+
+header .logo h1 {
+  font-size: 3rem;
+}
+
+/* Hamburgher menu */
+
+header #access {
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+}
+
+header #access .icon_left-text_right {
+  display: flex;
+  column-gap: 0.5rem;
+  cursor: pointer;
+}
+
+header #access .icon_left-text_right #menu-hamburger {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.4rem;
+}
+
+header #access .icon_left-text_right #menu-hamburger:hover .row {
+  background-color: rgb(204, 204, 204);
+}
+
+header #access .icon_left-text_right #menu-hamburger .row {
+  height: 3px;
+  width: 30px;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Options menu */
+
+header #access #divisor {
+  height: 24px;
+  width: 2px;
+  background-color: rgb(207, 207, 207);
+}
+
+/* Search-bar */
+
+#search-bar {
+  background-color: #168732;
+  width: 180px;
+  height: 35px;
+  padding: 5px;
+  border-radius: 0.2rem;
+}
+
+.icon-search {
+  text-align: center;
+
+}
+
+main {
+  display: flex;
+  padding: 3rem 10rem;
+}
+
+
+/* Videos section */
+
+main .main-content {
+  flex: 7;
+  padding: 3rem;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+
+main aside {
+  flex: 3;
+}
+
+main .main-videos .header-videos-content {
+  display: flex;
+  align-items: center;
+}
+
+main .main-videos .header-videos-content .title {
+  font-size: 2rem;
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+main .main-videos .header-videos-content .icons {
+  margin-left: auto;
+  display: flex;
+}
+
+main .main-videos .header-videos-content .icons .icon {
+  font-size: 3rem;
+  margin-left: 1rem;
+  font-weight: bold;
+  color: #aaa;
+  cursor: default;
+}
+
+main .main-videos .header-videos-content .icons #icon-active {
+  font-size: 3rem;
+  margin-left: 1rem;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+
+main .main-videos .header-videos-content .videos-container video {
+  font-size: 25px;
+  color: var(--color2);
+  margin: 20px auto;
+  display: flex;
+
+}
+
+/* Main Videos */
+
+.videos-container {
+  display: flex;
+  cursor: pointer;
+  color: var(--main-color);
+}
+
+.videos-container .video {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* Posts container section */
+
+section .post-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+
+section .post {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  margin-bottom: 1.5rem;
+}
+
+section .post img {
+  width: 400px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+section .post-content {
+  display: flex;
+  flex-direction: column;
+}
+
+section .post span {
+  font-size: 0.9rem;
+  margin-right: 10px;
+}
+
+section .post h2 {
+  flex: 1;
+  font-size: 1.2rem;
+  color: #06aa48;
+}
+
+section .post a {
+  font-size: 0.9rem;
+  color: var(--main-color);
+}
