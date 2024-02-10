@@ -7,6 +7,9 @@
 
 :root {
   --main-color: #06aa48;
+  --dark-main-color: #008d38;
+  --dark-white: #eee;
+  --white-default: #fff;
 }
 
 html,
@@ -14,6 +17,7 @@ body {
   scroll-behavior: smooth;
   height: 100%;
   width: 100%;
+  background-color: var(--dark-white);
 }
 
 /* Navbar */
@@ -26,12 +30,8 @@ header {
   color: white;
   font-weight: bold;
   padding: 1.5rem 4rem;
-  text-transform: uppercase;
-  font-size: 1.125rem;
-}
 
-header .logo h1 {
-  font-size: 3rem;
+  font-size: 1.125rem;
 }
 
 /* Hamburgher menu */
@@ -72,19 +72,17 @@ header #access #divisor {
   background-color: rgb(207, 207, 207);
 }
 
-/* Search-bar */
-
-#search-bar {
-  background-color: #168732;
-  width: 180px;
-  height: 35px;
-  padding: 5px;
-  border-radius: 0.2rem;
+header .logo h1 {
+  font-size: 3rem;
 }
 
-.icon-search {
-  text-align: center;
+/* Search-bar */
 
+header #search-bar {
+  background-color: var(--dark-main-color);
+  padding: 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 main {
@@ -92,18 +90,89 @@ main {
   padding: 3rem 10rem;
 }
 
-
 /* Videos section */
 
 main .main-content {
-  flex: 7;
+  flex: 8;
   padding: 3rem;
-  border-bottom: 1px solid #ccc;
-  border-top: 1px solid #ccc;
 }
 
+/* Aside section */
+
 main aside {
+  padding: 1rem 1.5rem;
   flex: 3;
+  border: 1px solid #ccc;
+  background-color: var(--white-default);
+}
+
+main aside h3 {
+  color: var(--main-color);
+  margin-top: 0.5rem;
+}
+
+main aside .round-number {
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+main aside .header-table {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+main aside .position {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+  margin-bottom: 0.75rem;
+}
+
+main aside .position .team {
+  display: flex;
+  gap: 1rem;
+}
+
+main aside .position .team .placing {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #999;
+}
+
+main aside .position .team img {
+  width: 20px;
+}
+
+main aside .position .score-point {
+  font-weight: bold;
+}
+
+main aside .position .results {
+  display: flex;
+  gap: 0.25rem;
+}
+
+main aside .ball {
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+}
+
+.win {
+  background-color: var(--dark-main-color);
+}
+
+.lose {
+  background-color: red;
+}
+
+.draw {
+  background-color: #aaa;
 }
 
 main .main-videos .header-videos-content {
@@ -138,71 +207,6 @@ main .main-videos .header-videos-content .icons #icon-active {
   cursor: pointer;
 }
 
-main .main-videos .header-videos-content .videos-container video {
-  font-size: 25px;
-  color: var(--color2);
-  margin: 20px auto;
+main .main-videos .videos-container {
   display: flex;
-
-}
-
-/* Main Videos */
-
-.videos-container {
-  display: flex;
-  cursor: pointer;
-  color: var(--main-color);
-}
-
-.videos-container .video {
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  padding: 0.5rem;
-}
-
-/* Posts container section */
-
-section .post-container {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #ccc;
-  border-top: 1px solid #ccc;
-}
-
-section .post {
-  display: flex;
-  flex-direction: row;
-  align-items: start;
-  margin-bottom: 1.5rem;
-}
-
-section .post img {
-  width: 400px;
-  height: auto;
-  margin-right: 1rem;
-}
-
-section .post-content {
-  display: flex;
-  flex-direction: column;
-}
-
-section .post span {
-  font-size: 0.9rem;
-  margin-right: 10px;
-}
-
-section .post h2 {
-  flex: 1;
-  font-size: 1.2rem;
-  color: #06aa48;
-}
-
-section .post a {
-  font-size: 0.9rem;
-  color: var(--main-color);
 }
