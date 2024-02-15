@@ -23,13 +23,14 @@ body {
 /* btn */
 
 .btn {
-  float: right;
+  float: left;
   margin-top: 10px;
   padding: .5rem 1rem;
   background: var(--main-color);
   border-radius: .30rem;
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .btn2 {
@@ -41,7 +42,33 @@ body {
   border-radius: .30rem;
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
+
 }
+
+.btn2_2 {
+  display: flex;
+  padding: .5rem;  
+  background: red;
+  border-radius: .30rem;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+
+}
+
+.btn3 {
+  background-color: #146f08;
+  border-radius: .30rem;
+  padding: .2rem .3rem ;
+  color: #fff;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: small;
+  cursor: pointer;
+}
+
 
 /* Navbar */
 
@@ -119,10 +146,25 @@ main {
 
 main .main-content {
   flex: 6;
-  padding: 3rem;
+  padding: 2rem;
 }
 
-/* Posts Slider */
+/* Main photos banner */
+
+/* Aggiunta delle regole per le immagini */
+#image-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+#image-container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
 
 
@@ -148,6 +190,7 @@ main .main-content {
   width: 100%;
   height: 270px;
   margin: 10px;
+  padding: 10px;
   border-radius: 5px;
   background-color: var(--white-default);
 }
@@ -178,11 +221,12 @@ main .main-content {
 /* Aside section */
 
 main aside {
-  padding: 1rem 1.5rem;
-  flex: 4;
+  padding: 1rem;
+  flex: 3;
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: var(--white-default);
+  margin-bottom: 20px;
 }
 
 main aside h3 {
@@ -227,6 +271,31 @@ main aside .position .team img {
   width: 25px;
 }
 
+main aside .post .champions-league {
+  width: 75px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+main aside .actual-round .champions-league {
+  width: 75px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+
+}
+
+main aside .actual-round .serie-a {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.serie {
+  width: 120px;
+  margin-bottom: 20px;
+  align-items: center;
+
+}
+
 main aside .position .score-point {
   font-weight: bold;
 }
@@ -253,6 +322,43 @@ main aside .ball {
 .draw {
   background-color: #aaa;
 }
+
+.post {
+  margin-top: 20px;
+}
+
+/* next games */
+
+.match-result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.match-result .team {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.match-result .team img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.match-result .team span {
+  font-weight: bold;
+}
+
+.result {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
 
 /* Videos section */
 
