@@ -27,19 +27,19 @@ body {
   margin-top: 10px;
   padding: .5rem 1rem;
   background: var(--main-color);
-  border-radius: .30rem;
+  border-radius: .33rem;
   color: #fff;
   text-decoration: none;
   cursor: pointer;
 }
 
 .btn2 {
-  float: right;
-  margin-right: 400px;
+  display: flex;
+  justify-content: center;
   margin-top: 10px;
-  padding: .5rem 1rem;
+  padding: .5rem;
   background: red;
-  border-radius: .30rem;
+  border-radius: .33rem;
   color: #fff;
   text-decoration: none;
   cursor: pointer;
@@ -48,9 +48,11 @@ body {
 
 .btn2_2 {
   display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
   padding: .5rem;  
   background: red;
-  border-radius: .30rem;
+  border-radius: .33rem;
   color: #fff;
   text-decoration: none;
   text-align: center;
@@ -61,14 +63,13 @@ body {
 .btn3 {
   background-color: #146f08;
   border-radius: .30rem;
-  padding: .2rem .3rem ;
+  padding: .2rem ;
   color: #fff;
-  margin-top: 10px;
+  margin-top: 5px;
   text-decoration: none;
   font-size: small;
   cursor: pointer;
 }
-
 
 /* Navbar */
 
@@ -125,7 +126,7 @@ header #access #divisor {
 }
 
 header .logo h1 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 /* Search-bar */
@@ -141,31 +142,65 @@ header #search-bar {
 
 main {
   display: flex;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 main .main-content {
   flex: 6;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
-/* Main photos banner */
+/* Top Headline news */
 
-/* Aggiunta delle regole per le immagini */
-#image-container {
+.top-headline-news{
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: var(--white-default);
+  margin: 50px;
+  padding: 60px;
+  
+}
+
+.headline-news {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  margin: 60px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: var(--white-default)
+}
+
+.headline-news img {
+  width: 50%;
+  height: 100%;
+  margin-right: 20px;
   padding: 20px;
 }
 
-#image-container img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
+.news-content {
+  flex: 1;
 }
 
+.title-headline {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #146f08;
+}
+
+.sub-title-headline {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #146f08;
+}
+
+
+.parag {
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: var(--dark-main-color);
+}
 
 
 /* Posts content section */
@@ -180,7 +215,7 @@ main .main-content {
 .content .main-content {
   width: 100%;
   float: left;
-  padding: 10px;
+  padding: 15px;
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: var(--white-default)
@@ -211,16 +246,19 @@ main .main-content {
   color: var(--main-color);
 }
 
-.content .main-content .recent-post-title {
+.content .main-content .recent-post-title .h3{
   color: #0c500c;
 }
-
-
+.content .main-content .preview-text {
+  margin-top: .4rem;
+  margin-bottom: 1rem;
+}
 
 
 /* Aside section */
 
 main aside {
+  align-items: center;
   padding: 1rem;
   flex: 3;
   border: 1px solid #ccc;
@@ -281,12 +319,12 @@ main aside .actual-round .champions-league {
   width: 75px;
   margin-bottom: 30px;
   margin-left: 30px;
-
 }
 
 main aside .actual-round .serie-a {
   width: 120px;
   margin-bottom: 20px;
+  margin-left: 30px;
 }
 
 .serie {
@@ -302,7 +340,7 @@ main aside .position .score-point {
 
 main aside .position .results {
   display: flex;
-  gap: 0.25rem;
+  gap: 0.10rem;
 }
 
 main aside .ball {
